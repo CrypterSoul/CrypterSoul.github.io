@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html><head><title>代数系统</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="代数系统"/><meta property="og:description" content="二元运算 § 设 S 为集合，函数 f ： S × S → S 称为 S 上的 二元运算 S 中任何两个元素都可以进行运算，且运算的结果惟一． S 中任何两个元素的运算结果都属于 S ，即 S对该运算封闭． 一元运算 § 设 S 为集合，函数 f : S→ S 称为 S 上的 一元运算 交换律 § 设◦为 S 上的二元运算, 若对任意 x ,y ∈ S 有 x ◦ y = y ◦ x , 则称运算在 S 上满足 交换律."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="二元运算 § 设 S 为集合，函数 f ： S × S → S 称为 S 上的 二元运算 S 中任何两个元素都可以进行运算，且运算的结果惟一． S 中任何两个元素的运算结果都属于 S ，即 S对该运算封闭． 一元运算 § 设 S 为集合，函数 f : S→ S 称为 S 上的 一元运算 交换律 § 设◦为 S 上的二元运算, 若对任意 x ,y ∈ S 有 x ◦ y = y ◦ x , 则称运算在 S 上满足 交换律."/><meta name="generator" content="Quartz"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="./index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="./prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script></head><body data-slug="代数系统"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title "><a href=".">😅 CrypterSoul Home</a></h1><div class="spacer mobile-only"></div><div class="search "><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="results-container"></div></div></div></div><div class="darkmode "><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve"><title>Light mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve"><title>Dark mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;Daily&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></div></li><li><div><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Daily"><button class="folder-button"><p class="folder-title">Daily</p></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Daily"><li><li><a href="./Daily/2022-10-04" data-for="Daily/2022-10-04">2022-10-04</a></li></li><li><li><a href="./Daily/2022-10-09" data-for="Daily/2022-10-09">2022-10-09</a></li></li><li><li><a href="./Daily/2023-08-19" data-for="Daily/2023-08-19">2023-08-19</a></li></li><li><li><a href="./Daily/2023-08-22" data-for="Daily/2023-08-22">2023-08-22</a></li></li><li><li><a href="./Daily/2023-10-15" data-for="Daily/2023-10-15">2023-10-15</a></li></li><li><li><a href="./Daily/2023-10-23" data-for="Daily/2023-10-23">2023-10-23</a></li></li><li><li><a href="./Daily/2023-10-24" data-for="Daily/2023-10-24">2023-10-24</a></li></li><li><li><a href="./Daily/2023-10-25" data-for="Daily/2023-10-25">2023-10-25</a></li></li><li><li><a href="./Daily/2023-10-26" data-for="Daily/2023-10-26">2023-10-26</a></li></li><li><li><a href="./Daily/2023-10-30" data-for="Daily/2023-10-30">2023-10-30</a></li></li><li><li><a href="./Daily/2023-10-31" data-for="Daily/2023-10-31">2023-10-31</a></li></li><li><li><a href="./Daily/2023-11-01" data-for="Daily/2023-11-01">2023-11-01</a></li></li><li><li><a href="./Daily/2023-11-06" data-for="Daily/2023-11-06">2023-11-06</a></li></li><li><li><a href="./Daily/2023-11-08" data-for="Daily/2023-11-08">2023-11-08</a></li></li><li><li><a href="./Daily/2023-11-13" data-for="Daily/2023-11-13">2023-11-13</a></li></li><li><li><a href="./Daily/2023-11-14" data-for="Daily/2023-11-14">2023-11-14</a></li></li><li><li><a href="./Daily/2023-11-19" data-for="Daily/2023-11-19">2023-11-19</a></li></li><li><li><a href="./Daily/2023-11-27" data-for="Daily/2023-11-27">2023-11-27</a></li></li><li><li><a href="./Daily/2023-11-28" data-for="Daily/2023-11-28">2023-11-28</a></li></li><li><li><a href="./Daily/2023-12-01" data-for="Daily/2023-12-01">2023-12-01</a></li></li><li><li><a href="./Daily/2023-12-05" data-for="Daily/2023-12-05">2023-12-05</a></li></li><li><li><a href="./Daily/2023-12-19" data-for="Daily/2023-12-19">2023-12-19</a></li></li><li><li><a href="./Daily/2023-12-20" data-for="Daily/2023-12-20">2023-12-20</a></li></li><li><li><a href="./Daily/2023-12-23" data-for="Daily/2023-12-23">2023-12-23</a></li></li><li><li><a href="./Daily/2023-12-28" data-for="Daily/2023-12-28">2023-12-28</a></li></li><li><li><a href="./Daily/2024-01-06" data-for="Daily/2024-01-06">2024-01-06</a></li></li></ul></div></div></li><li><li><a href="./01背包" data-for="01背包">01背包</a></li></li><li><li><a href="./c" data-for="c">c</a></li></li><li><li><a href="./CLRS" data-for="CLRS">CLRS</a></li></li><li><li><a href="./cpp" data-for="cpp">cpp</a></li></li><li><li><a href="./csapp" data-for="csapp">csapp</a></li></li><li><li><a href="./csharp" data-for="csharp">csharp</a></li></li><li><li><a href="./git" data-for="git">git</a></li></li><li><li><a href="./IAD" data-for="IAD">IAD</a></li></li><li><li><a href="./java" data-for="java">java</a></li></li><li><li><a href="./make" data-for="make">make</a></li></li><li><li><a href="./Obsidian" data-for="Obsidian">Obsidian</a></li></li><li><li><a href="./OpenGL" data-for="OpenGL">OpenGL</a></li></li><li><li><a href="./python" data-for="python">python</a></li></li><li><li><a href="./record" data-for="record">record</a></li></li><li><li><a href="./代数系统" data-for="代数系统">代数系统</a></li></li><li><li><a href="./关系代数" data-for="关系代数">关系代数</a></li></li><li><li><a href="./分组背包" data-for="分组背包">分组背包</a></li></li><li><li><a href="./动态规划" data-for="动态规划">动态规划</a></li></li><li><li><a href="./图图" data-for="图图">图图</a></li></li><li><li><a href="./多重背包" data-for="多重背包">多重背包</a></li></li><li><li><a href="./完全背包" data-for="完全背包">完全背包</a></li></li><li><li><a href="./差分" data-for="差分">差分</a></li></li><li><li><a href="./插值" data-for="插值">插值</a></li></li><li><li><a href="./操作系统" data-for="操作系统">操作系统</a></li></li><li><li><a href="./故事" data-for="故事">故事</a></li></li><li><li><a href="./数据库" data-for="数据库">数据库</a></li></li><li><li><a href="./数理逻辑" data-for="数理逻辑">数理逻辑</a></li></li><li><li><a href="./方程求根" data-for="方程求根">方程求根</a></li></li><li><li><a href="./概率论" data-for="概率论">概率论</a></li></li><li><li><a href="./求积" data-for="求积">求积</a></li></li><li><li><a href="./算法" data-for="算法">算法</a></li></li><li><li><a href="./线性方程" data-for="线性方程">线性方程</a></li></li><li><li><a href="./组成原理" data-for="组成原理">组成原理</a></li></li><li><li><a href="./编译原理" data-for="编译原理">编译原理</a></li></li><li><li><a href="./计算方法" data-for="计算方法">计算方法</a></li></li><li><li><a href="./计算机图形学" data-for="计算机图形学">计算机图形学</a></li></li><li><li><a href="./集合论" data-for="集合论">集合论</a></li></li></ul></div></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container " aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>代数系统</a></div></nav><h1 class="article-title ">代数系统</h1><p class="content-meta ">Jan 06, 2024, 13 min read</p><ul class="tags "><li><a href="./tags/离散数学" class="internal tag-link">#离散数学</a></li></ul></div></div><article class="popover-hint"><h5 id="二元运算">二元运算<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#二元运算" class="internal alias"> §</a></h5>
+<p>设 S 为集合，函数 f  ： S × S → S 称为 S 上的 二元运算
+S 中任何两个元素都可以进行运算，且运算的结果惟一．
+S 中任何两个元素的运算结果都属于 S ，即 S对该运算封闭．</p>
+<h5 id="一元运算">一元运算<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一元运算" class="internal alias"> §</a></h5>
+<p>设 S 为集合，函数 f : S→ S 称为 S 上的 一元运算
+<img src="./attachments/Pasted-image-20221113154809.png" width="auto" height="auto"/></p>
+<h5 id="交换律">交换律<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#交换律" class="internal alias"> §</a></h5>
+<p>设◦为 S 上的二元运算, 若对任意 x ,y ∈ S 有 x ◦ y = y ◦ x , 则称运算在 S 上满足 交换律.</p>
+<h5 id="结合律">结合律<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#结合律" class="internal alias"> §</a></h5>
+<p>设◦为 S 上的二元运算, 若对任意 x , y , , z ∈ S 有 有 ( x ◦ y )◦ z = x ◦( y ◦ z ), 则称运算在 S 上满足结合律. .</p>
+<h5 id="幂等律">幂等律<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#幂等律" class="internal alias"> §</a></h5>
+<p>设◦为 S 上的二元运算, 若对任意 x ∈ S 有 x ◦ x = x , 则称运算在S 上满足 幂等律.</p>
+<h5 id="分配律">分配律<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#分配律" class="internal alias"> §</a></h5>
+<p>设◦和∗为 为S 上两个不同的二元运算,
+若对任意x,y,z ∈S有 有 (x∗y)◦z=(x◦z)∗(y◦z)，z◦(x∗y)=(z◦x)∗(z◦y), 则称◦运算对∗运算满足分配律</p>
+<h5 id="吸收律">吸收律<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#吸收律" class="internal alias"> §</a></h5>
+<p>若°和 和∗都可交换, 且对任意x,y ∈S有 有 x◦(x∗y)=x ，x∗ (x◦y)=x,则称◦和∗运算满足吸收律</p>
+<h5 id="单位元">单位元<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#单位元" class="internal alias"> §</a></h5>
+<p><strong>与单位元运算为自身</strong></p>
+<p>设◦ 为S 上的二元运算,
+(1) 如果存在e l ( 或e r )∈S ，使得对任意 x ∈S 都有
+e l ◦x = x (或 x◦e r = x)，则称e l ( 或e r ) 是S 中关于◦ 运算的左(或右) 单位元.
+若e ∈S 关于◦ 运算既是左单位元又是右单位元，则称e 为S 上关于◦ 运算的 单位元. 单位元也叫做 幺元.</p>
+<p>存在一行和（和一列），该行（列）所有元素等于他所在列的头</p>
+<h5 id="零元">零元<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#零元" class="internal alias"> §</a></h5>
+<p><strong>与零元运算为零元</strong></p>
+<p>如果存在 θl (或
+或θr ) ∈S ，使得对任意 x ∈S 都有θl ◦x = θ θ l
+(或x◦ θr= θr)，则称θl (或 θr ) 是S 中关于◦ 运算的左(或右) 零元.
+若 θ ∈S 关于◦ 运算既是左零元又是右零元，则称 θ 为S 上关于运算◦的 零元.</p>
+<p>存在一行和（和一列），该行（列）所有元素该行的头</p>
+<h5 id="可逆元素和逆元">可逆元素和逆元<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#可逆元素和逆元" class="internal alias"> §</a></h5>
+<p><strong>与逆元运算为单位元</strong></p>
+<p>设◦ 为S 上的二元运算 , 令e 为S 中关于运算°的单位元.
+对于x ∈S ，如果存在y l ( 或y r ) ∈S 使得y l ◦x=e （或x◦y r =e）则称y l (或y r ) 是x 的 左<strong>逆元</strong> （或 右逆元） ）.关于◦ 运算，若y ∈S 既是 x 的左逆元又是 x 的右逆元，则称y 为x 的 逆元. 如果 x 的逆元存在，就称 x 是<strong>可逆的</strong></p>
+<p>设*是A上的二元运算 ， 具有左幺元el ，右幺元er ， 则e e l=e r =e</p>
+<p>单位元，零元，逆元若存在，则唯一
+当 |S| ≥ ≥ 2 ，单位元与零元是不同的；
+当 |S| = 1，这个元素既是单位元也是零元</p>
+<h5 id="消去律">消去律<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#消去律" class="internal alias"> §</a></h5>
+<p>已知 &lt;A ，* >  ，若∀x ，y ， z∈A ，有
+(1) 若  x* y = x* z且x ≠ θ, , 则 y=z ；
+(2) 若 y* x = z* x且 x ≠θ, , 则 y=z ；那么称*满足消去律</p>
+<h4 id="代数系统">代数系统<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#代数系统" class="internal alias"> §</a></h4>
+<p>非空集合S 和S 上k 个<a href="./代数系统#一元运算" class="internal alias" data-slug="代数系统">一元</a>或<a href="./代数系统#二元运算" class="internal alias" data-slug="代数系统">二元运算</a>f 1 ,f 2 ,…, f k 组成的系统称为 代数系统, 简称代数，记做&lt;S, f 1 , f 2 , …, f k >.
+当Ω ={f 1 ,…,f n }是有限时,代数系统常记为&lt;S,f 1 ,…,f n >
+当A有限时,称&lt;A,Ω>是有限代数系统</p>
+<h4 id="同类型">同类型<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#同类型" class="internal alias"> §</a></h4>
+<p>如果两个代数系统中运算的个数相同，对应运算的元数相同，且代数常数的个数也相同，则称它们是 同类型的 代数系统.</p>
+<h4 id="同种">同种<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#同种" class="internal alias"> §</a></h4>
+<p>如果两个同类型的代数系统规定的运算性质也相同，则称为 同种的代数系统</p>
+<h4 id="子代数">子代数<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#子代数" class="internal alias"> §</a></h4>
+<p>设V=&lt;S, f 1 , f 2 , …, f k > 是代数系统，B 是S 的非空子集，如果B 对f 1 , f 2 , …, f k 都是封闭的，且B 和S 含有相同的代数常数，则称&lt;B, f 1 , f 2 , …, f k > 是V 的 子代数系统 ，简称<strong>子代数</strong>. 有时将子代数系统简记为B.</p>
+<h4 id="积代数">积代数<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#积代数" class="internal alias"> §</a></h4>
+<p>设V 1 =&lt;A,◦>和 和V 2 =&lt;B,∗> 是<a href="./代数系统#同类型" class="internal alias" data-slug="代数系统">同类型</a>的代数系统，◦ 和∗为二元运算，在集合A× ×B 上如下定义二元运算▪，∀&lt;a 1 ,b 1 >,&lt;a 2 ,b 2 >∈A×B ，有
+<strong>&lt;a 1 ,b 1 >▪&lt;a 2 ,b 2 >=&lt;a 1 ◦ a 2 , b 1 ∗b 2 ></strong>
+称V=&lt;A×B,▪ > 为V 1 与V 2 的 积代数 ，记作V 1 ×V 2 . 这时也称V 1和V 2 为V 的因子代数</p>
+<h4 id="同态">同态<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#同态" class="internal alias"> §</a></h4>
+<p>设V 1 =&lt;A,∘>和 和V 2 =&lt;B,∗> 是<a href="./代数系统#同类型" class="internal alias" data-slug="代数系统">同类型</a>的代数系统，f:A →B ，且∀x, y∈A有 有 f(x∘y) = f(x)∗f(y), 则称 f 是V 1 到V 2 的同态 映射，简称同态</p>
+<p>单同态：f为单射</p>
+<p>满同态：f为满射</p>
+<p>同构：f为双射</p>
+<p>若V1=V2则称为自同态</p>
+<h4 id="半群">半群<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#半群" class="internal alias"> §</a></h4>
+<p>设V=&lt;S, ∘ > 是<a href="./代数系统#代数系统" class="internal alias" data-slug="代数系统">代数系统</a>，∘ 为二元运算，如果∘运算是可结合的，则称V为 半群.</p>
+<h4 id="幺半群独异点">幺半群（独异点）<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#幺半群独异点" class="internal alias"> §</a></h4>
+<p>设V=&lt;S,∘ >是<a href="./代数系统#半群" class="internal alias" data-slug="代数系统">半群</a>，若 是半群，若e ∈S是关于 是关于∘ 运算的单位元，则称 运算的单位元，则称V是 含幺半群 ，也叫做 独异点. 有时也将独异点V 记作V=&lt;S,∘,e>.</p>
+<h4 id="群">群<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#群" class="internal alias"> §</a></h4>
+<p>设V=&lt;S,∘>是<a href="./代数系统#幺半群独异点" class="internal alias" data-slug="代数系统">幺半群</a>，e∈S关于∘运算的单位元，若∀a∈S ，a−1 ∈ ∈S ，则称V 是群. 通常将群记作G</p>
+<p>Klein四元群</p>
+<h4 id="群的阶">群的阶<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#群的阶" class="internal alias"> §</a></h4>
+<p>群G 的基数称为群 G 的 阶，有限群G 的阶记作|G|.</p>
+<h4 id="有穷群">有穷群<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#有穷群" class="internal alias"> §</a></h4>
+<p>群G 是有穷集</p>
+<h4 id="无限群">无限群<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#无限群" class="internal alias"> §</a></h4>
+<p>群G 是无限集</p>
+<h4 id="平凡群">平凡群<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#平凡群" class="internal alias"> §</a></h4>
+<p>只含单位元（阶数为1 ）的群称为 平凡群</p>
+<h4 id="交换群">交换群<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#交换群" class="internal alias"> §</a></h4>
+<p>若<a href="./代数系统#群" class="internal alias" data-slug="代数系统">群</a>G 中的二元运算是可交换的，则称G 为 交换群 或 阿贝尔 (Abel) 群.</p>
+<h4 id="元素的幂">元素的幂<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#元素的幂" class="internal alias"> §</a></h4>
+<p>设G 是群，a ∈G ，n ∈Z ，则a 的 的 n 次幂</p>
+<span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.9em;vertical-align:-1.7em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.2em;"><span style="top:-4.2em;"><span class="pstrut" style="height:4.05em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-2.5em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-2.492em;"><span class="pstrut" style="height:3.15em;"></span><span style="height:0.016em;width:0.8889em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.8889em" height="0.016em" style="width:0.8889em;" viewBox="0 0 888.89 16" preserveAspectRatio="xMinYMin"><path d="M384 0 H504 V16 H384z M384 0 H504 V16 H384z"></path></svg></span></span><span style="top:-3.15em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.292em;"><span class="pstrut" style="height:3.15em;"></span><span style="height:0.016em;width:0.8889em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.8889em" height="0.016em" style="width:0.8889em;" viewBox="0 0 888.89 16" preserveAspectRatio="xMinYMin"><path d="M384 0 H504 V16 H384z M384 0 H504 V16 H384z"></path></svg></span></span><span style="top:-4.3em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">   </span><span class="mord mathnormal">e</span><span class="mord"> </span></span></span><span style="top:-3.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">   </span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mord"> </span></span></span><span style="top:-1.81em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">0</span></span></span><span style="top:-3.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">0</span></span></span><span style="top:-1.81em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">−</span><span class="mord mathnormal">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.7em;"><span></span></span></span></span></span></span></span></span></span></span></span>
+<h4 id="元素的阶">元素的阶<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#元素的阶" class="internal alias"> §</a></h4>
+<p>设G 是群，a ∈G ，使得等式 a k =e 成立的最小正整数
+k 称为a 的阶，记作|a|=k ，称 a 为 为 k 阶元. 若不存在这样的正
+整数 k ，则称 a 为无限阶元</p>
+<h4 id="子群">子群<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#子群" class="internal alias"> §</a></h4>
+<p>设G 是群，H 是G 的非空子集，
+(1) 如果H 关于G 中的运算构成群，则称H 是G 的 子群, 记作H≤G.
+(2) 若H 是G 的子群，且H⊂G ，则称H 是G 的 真子群 ，记作H&lt;G.</p>
+<h4 id="todo-求子群">todo 求子群<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#todo-求子群" class="internal alias"> §</a></h4>
+<h5 id="判定定理">判定定理<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#判定定理" class="internal alias"> §</a></h5>
+<p>设G 为群，H 是G 的非空子集，则H 是G 的子群当且仅当
+(1) ∀ a,b ∈H 有ab ∈H
+(2) ∀ a ∈H 有a − 1 ∈H.</p>
+<p>设G 为群，H 是G 的非空子集. H 是G 的子群当且仅当∀a,b ∈H
+有ab −1 ∈ H.</p>
+<p>设G 为群，H 是G 的非空有穷子集，则H 是G 的子群当且仅当∀a,b ∈H 有ab∈ H.</p>
+<h4 id="平凡子群">平凡子群<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#平凡子群" class="internal alias"> §</a></h4>
+<p>对任何群G 都存在子群. G 和{e} 都是G 的子群，称为G 的平凡子群.</p>
+<h4 id="子群格">子群格<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#子群格" class="internal alias"> §</a></h4>
+<p>设G 为群, 令L(G) = {H | H 是G 的子群}，则<a href="./集合论#偏序集" class="internal alias" data-slug="集合论">偏序集</a>&lt; L(G), ⊆ > 称为G 的子群格</p>
+<h4 id="右陪集">右陪集<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#右陪集" class="internal alias"> §</a></h4>
+<p>设H 是G 的子群，a∈G.令Ha={ha | h ∈H}，称Ha 是子群H 在G 中的 右陪集. 称a 为Ha 的 代表元素</p>
+<p>Lagrange定理</p>
+<span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal">G</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mclose">]</span></span></span></span></span>
+<p>[G:H]是H在G中的陪集数</p>
+<p>推论</p>
+<h4 id="循环群生成元">循环群/生成元<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#循环群生成元" class="internal alias"> §</a></h4>
+<p><strong>一个元素的不同幂次能构成整个集合</strong></p>
+<p>设G 是群，若存在a ∈G 使得G={a^k | k ∈Z}，则称G 是 循环群 ，记作G=&lt;a> ，称 a 为G 的生成元.</p>
+<p>循环群的分类：n 阶循环群 和 无限循环群.
+<img src="./attachments/Pasted-image-20221114204825.png" width="auto" height="auto"/></p>
+<h4 id="环">环<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#环" class="internal alias"> §</a></h4>
+<p>设&lt;R,+,·> 是<a href="./代数系统#代数系统" class="internal alias" data-slug="代数系统">代数系统</a>，+ 和· 是二元运算. 如果满足
+以下条件:
+(1) &lt;R,+> 构成 <a href="./代数系统#交换群" class="internal alias" data-slug="代数系统">交换群</a>
+(2) &lt;R,·> 构成 <a href="./代数系统#半群" class="internal alias" data-slug="代数系统">半群</a>
+(3) · 运算关于+ 运算适合 <a href="./代数系统#分配律" class="internal alias" data-slug="代数系统">分配律</a>
+则称&lt;R,+,·> 是一个环.
+通常称+ 运算为环中的 加法， · 运算为环中的 乘法.
+环中加法单位元记作 0 ，乘法单位元（如果存在）记作1.
+对任何元素 x ，称 x 的加法逆元为 负元 ，记作−x.
+若 x 存在乘法逆元的话，则称之为 逆元 ，记作x ^−1</p>
+<h4 id="交换环">交换环<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#交换环" class="internal alias"> §</a></h4>
+<p>设&lt;R,+,·> 是环，若环中乘法 · 适合交换律，则称R 是 交换环</p>
+<h4 id="含幺环">含幺环<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#含幺环" class="internal alias"> §</a></h4>
+<p>设&lt;R,+,·> 是环，若环中乘法 · 存在单位元，则称R 是 含幺环</p>
+<h4 id="无零因子环">无零因子环<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#无零因子环" class="internal alias"> §</a></h4>
+<p><strong>非零的乘积非零</strong>
+设&lt;R,+,·> 是环，若 ∀a,b ∈R， ab=0 ⇒  a=0 ∨b=0 ，则称R 是无零因子环</p>
+<h4 id="整环">整环<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#整环" class="internal alias"> §</a></h4>
+<p>设 &lt;R,+,• > 是一个<a href="./代数系统#代数系统" class="internal alias" data-slug="代数系统">代数系统</a>, 若满足:
+(1) &lt;R,+>是<a href="./代数系统#交换群" class="internal alias" data-slug="代数系统">阿贝尔群</a>
+(2) &lt;R,• > 是可交换<a href="./代数系统#幺半群独异点" class="internal alias" data-slug="代数系统">独异点</a>，且<a href="./代数系统#无零因子环" class="internal alias" data-slug="代数系统">无零因子</a>
+(3) 运算• 对+是可分配的
+则称 &lt;R,+,• >是 整环</p>
+<h4 id="域">域<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#域" class="internal alias"> §</a></h4>
+<p>设 &lt;R,+,• > 是一个<a href="./代数系统#代数系统" class="internal alias" data-slug="代数系统">代数系统</a>, 若满足:
+(1) &lt;R,+>是<a href="./代数系统#交换群" class="internal alias" data-slug="代数系统">阿贝尔群</a>
+(2) &lt;R-{0},• >是<a href="./代数系统#交换群" class="internal alias" data-slug="代数系统">阿贝尔群</a>
+(3) 运算• 对+是可分配的
+则称 &lt;R,+,• >是 域</p>
+<h4 id="格">格<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#格" class="internal alias"> §</a></h4>
+<p>设 &lt;S, ≼>是<a href="./集合论#偏序集" class="internal alias" data-slug="集合论">偏序集</a>，如果∀ x,y∈S ，{x,y} 都有最小上界和最大下界，则称S关于偏序  ≼作成一个格
+求{x,y} 最小上界和最大下界看成 x 与 与 y 的二元运算 ∨ 和 ∧</p>
+<h4 id="对偶定理">对偶定理<a aria-hidden="true" tabindex="-1" data-no-popover="true" href="#对偶定理" class="internal alias"> §</a></h4>
+<p>设f 是含有格中元素以及符号 是含有格中元素以及符号 =,≼  ,≽  ,∨  和 ∧ 的命题，令 f* 是将 f 中的 中的≼ 替换成≽,≽ 替换成≼,∨替换成∧, ∧ 替换成∨所得到的命题. 称  f* 为 f 的对偶命题</p></article></div><div class="right sidebar"><div class="graph "><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div><svg version="1.1" id="global-graph-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+	s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+	c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+	C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+	c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+	v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+	s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+	C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+	S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+	s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[]}"></div></div></div><div class="backlinks "><h3>Backlinks</h3><ul class="overflow"><li><a href="./代数系统" class="internal">代数系统</a></li></ul></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.1.3</a>, © 2024</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></body><script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">// quartz/components/scripts/quartz/components/scripts/callout.inline.ts
+function toggleCallout() {
+  const outerBlock = this.parentElement;
+  outerBlock.classList.toggle(`is-collapsed`);
+  const collapsed = outerBlock.classList.contains(`is-collapsed`);
+  const height = collapsed ? this.scrollHeight : outerBlock.scrollHeight;
+  outerBlock.style.maxHeight = height + `px`;
+  let current = outerBlock;
+  let parent = outerBlock.parentElement;
+  while (parent) {
+    if (!parent.classList.contains(`callout`)) {
+      return;
+    }
+    const collapsed2 = parent.classList.contains(`is-collapsed`);
+    const height2 = collapsed2 ? parent.scrollHeight : parent.scrollHeight + current.scrollHeight;
+    parent.style.maxHeight = height2 + `px`;
+    current = parent;
+    parent = parent.parentElement;
+  }
+}
+function setupCallout() {
+  const collapsible = document.getElementsByClassName(
+    `callout is-collapsible`
+  );
+  for (const div of collapsible) {
+    const title = div.firstElementChild;
+    if (title) {
+      title.removeEventListener(`click`, toggleCallout);
+      title.addEventListener(`click`, toggleCallout);
+      const collapsed = div.classList.contains(`is-collapsed`);
+      const height = collapsed ? title.scrollHeight : div.scrollHeight;
+      div.style.maxHeight = height + `px`;
+    }
+  }
+}
+document.addEventListener(`nav`, setupCallout);
+window.addEventListener(`resize`, setupCallout);
+</script><script type="module">
+          import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+          const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+          mermaid.initialize({
+            startOnLoad: false,
+            securityLevel: 'loose',
+            theme: darkMode ? 'dark' : 'default'
+          });
+          document.addEventListener('nav', async () => {
+            await mermaid.run({
+              querySelector: '.mermaid'
+            })
+          });
+          </script><script src="./postscript.js" type="module"></script></html>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>😅 CrypterSoul Home</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on 😅 CrypterSoul Home</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>c</title>
+    <link>https://quartz.jzhao.xyz/c</link>
+    <guid>https://quartz.jzhao.xyz/c</guid>
+    <description>表达式 § 表达式语句是表达式后加; 如hour * 60 + minute; 表达式有值和类型两个基本属性。 等号运算符的计算结果是左边的值。多个等号从右到左计算。 如果一个操作数左右两侧各有一个相同优先级的运算符，这个操作数的结合取决于运算符的结合性，相同优先级的运算符的结合性相同。 a=b=c 合法 而(a=b)=c (a=b)不是左值 不合法 函数调用是一种表达式，()运算符是后缀运算符，函数名是操作数，()及其中参数是操作数的后缀 使用math.</description>
+    <pubDate>Sat, 06 Jan 2024 15:50:07 GMT</pubDate>
+  </item><item>
+    <title>cpp</title>
+    <link>https://quartz.jzhao.xyz/cpp</link>
+    <guid>https://quartz.jzhao.xyz/cpp</guid>
+    <description>stream § cin buffer不为空时 跳过开始的空白符号 Fail/EOF/Good/Bad cin fail导致后续所有操作都fail getline(cin,string,‘\n’)不跳过开始的空白符号,读到\n，不将其读入并且之后的读入跳过他 解决方法cin.ignore()忽略一个buffer中的字符 int getInteger(const string&amp; prompt,const string&amp; reprompt){ while (true){ cout &lt;&lt; prompt; string line; if(!getline(cin, line)) throw domain_error(&quot;.</description>
+    <pubDate>Sat, 06 Jan 2024 15:50:07 GMT</pubDate>
+  </item><item>
+    <title>csapp</title>
+    <link>https://quartz.jzhao.xyz/csapp</link>
+    <guid>https://quartz.jzhao.xyz/csapp</guid>
+    <description>信息的表示和处理 § 整数的运算满足乘法结合律和交换律，溢出的结果是一致的 而浮点运算不满足结合律 (3.14+1e20)-1e20=0.0 3.14+(1e20-1e20)=3.14 虚拟地址空间 字节数组 十进制下x=2^n n=i+4j i∈[0,3] 该数的十六进制表示为1(i=0) 2(i=1) 4(i=2) 8(i=3)后j个0 2048=0x800 字长w 虚拟地址的范围是0-2^w-1 数据通路的宽度（CPU内部总线的宽度，运算器的位数，通用寄存器的宽度都应该等于） 字没有什么意义好像 可能是16位 大端法 最高有效字节在最前面 （正常书写数字规则） 小端法 最低有效字节在最前面 较新的微处理器采用双端法两种都能处理 Transclude of c#异或应用 练习题2.</description>
+    <pubDate>Sat, 06 Jan 2024 15:50:07 GMT</pubDate>
+  </item><item>
+    <title>csharp</title>
+    <link>https://quartz.jzhao.xyz/csharp</link>
+    <guid>https://quartz.jzhao.xyz/csharp</guid>
+    <description>char[] allMagics = new char[9]; char[] allMagics = new char[9]{.</description>
+    <pubDate>Sat, 06 Jan 2024 15:50:07 GMT</pubDate>
+  </item><item>
+    <title>git</title>
+    <link>https://quartz.jzhao.xyz/git</link>
+    <guid>https://quartz.jzhao.xyz/git</guid>
+    <description>cd想要创建仓库的位置 git init git add &lt;file&gt; 查看状态 git status 保存 -m可以附加一条信息 git commit -m &lt;MESSAGE&gt; 查看提交记录 git log 查看提交信息 使用提交记录中的id git show &lt;id&gt; 修改文件后直接commit是无效的（也可以观察到status里面的提示），需要再次将文件add 回滚 （会自动为其更改的文件执行git add） git checkout &lt;id&gt; &lt;path&gt; Unstage git reset HEAD &lt;file&gt; 修改（取代）最新的commit git commit --amend git push origin master git clone [remote-repo-URL] git remote add [remote-repo-name] [remote-repo-URL] git remote -v git pull [remote-repo-name] master git push [remote-repo-name] master.</description>
+    <pubDate>Sat, 06 Jan 2024 15:50:07 GMT</pubDate>
+  </item><item>
+    <title>Crypter</title>
+    <link>https://quartz.jzhao.xyz//</link>
+    <guid>https://quartz.jzhao.xyz//</guid>
+    <description>你好 操作系统 算法 编译原理 jyy 可执行文件相关笔记.</description>
+    <pubDate>Sat, 06 Jan 2024 15:50:07 GMT</pubDate>
+  </item><item>
+    <title>java</title>
+    <link>https://quartz.jzhao.xyz/java</link>
+    <guid>https://quartz.jzhao.xyz/java</guid>
+    <description>Walrus a = new Walrus(1000, 8.3); string不属于原始类型（byte, short, int, long, float, double, boolean, char）其余都被称为reference type 在java中对象的变量是指针 对象声明时开辟64bit空间存储地址 需要用new来为对象的实际内容开辟空间 复制对象即复制指针 对象并不是引用传递 而是按值传递引用 创建了一个新的指针指向同一块内存，在c中出现的swap指针函数在java中无法达到目的 原始类型按值传递 public class SLList { private static class IntNode { public int item; public IntNode next; public IntNode(int i, IntNode n) { item = i; next = n; } } private IntNode sentinel; private int size; public SLList() { sentinel = new IntNode(-1, null); size = 0; } public SLList(int x) { size = 1; sentinel = new IntNode(-1, null); sentinel.</description>
+    <pubDate>Sat, 06 Jan 2024 15:50:07 GMT</pubDate>
+  </item><item>
+    <title>make</title>
+    <link>https://quartz.jzhao.xyz/make</link>
+    <guid>https://quartz.jzhao.xyz/make</guid>
+    <description>&lt;target&gt; : &lt;prerequisites&gt; [tab] &lt;commands&gt; target可以是文件名代表生成对象，或者是自定义操作名 .PHONY声明一个名称为伪目标（操作），防止与文件重名 prerequisites代表依赖关系 .RECIPEPREFIX可以修改tab标记为别的键 commands默认在不同的shell执行（影响export这种） 解决方法分号分隔命令或者.</description>
+    <pubDate>Sat, 06 Jan 2024 15:50:07 GMT</pubDate>
+  </item><item>
+    <title>python</title>
+    <link>https://quartz.jzhao.xyz/python</link>
+    <guid>https://quartz.jzhao.xyz/python</guid>
+    <description>逻辑运算符 § x and y 如果 x 为 False，返回 x ，否则返回 y 。 x or y 如果 x 是 True，返回 x ，否则返回 y 。 在错误信息中，最近调用的函数在最下方。 计算嵌套表达式 计算operator和operend lambda表达式 lambda &lt;parameters&gt;: &lt;return expression&gt; 先从左到右计算所有表达式，再赋值 x = 10 y = x x = 20 x, y = y + 1, x - 1 #x=11 y=19 先在local frame中找该名字，再在global frame中找 from operator import mul def square(square): return mul(square, square) square(-2) python -i ex.</description>
+    <pubDate>Sat, 06 Jan 2024 15:50:07 GMT</pubDate>
+  </item><item>
+    <title>record</title>
+    <link>https://quartz.jzhao.xyz/record</link>
+    <guid>https://quartz.jzhao.xyz/record</guid>
+    <description>粗糙的分为三个部分albedo shading和specular来估计出一个粗的结果，然后refine颜色失真和tone.</description>
+    <pubDate>Sat, 06 Jan 2024 15:50:07 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
